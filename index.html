@@ -30,6 +30,21 @@
           }
         }];
       },
+      'card-back-section': function(t, options){
+        return {
+          title: 'My Card Back Section',
+          icon: GRAY_ICON, // Must be a gray icon, colored icons not allowed.
+          content: {
+            type: 'iframe',
+            url: t.signUrl('./estimate.html'),
+            height: 230, // Max height is 1500.
+            action: {
+              text: 'My Action',
+              callback: (t) => t.popup('hello from card back section'),
+            },
+          }
+        };
+      }
       });
       </script>
   </body>
