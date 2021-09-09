@@ -41,7 +41,9 @@
             height: 230, // Max height is 1500.
             action: {
               text: 'My Action',
-              callback: (t) => t.popup('hello from card back section'),
+              callback: function(t){
+               t.popup('hello from card back section')
+              }
             },
           }
         };
